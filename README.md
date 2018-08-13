@@ -1,3 +1,6 @@
+## Simple landing page to capture leads
+
+This is a very simple landing page, built using gatbsy.js. See the full blog post at https://sanjeevan.co.uk/blog/setup-a-landing-page-for-your-mvp
 
 ## To get started
 
@@ -10,10 +13,13 @@
 2) Install packages
 
     ```sh
+    cd <project folder>
     yarn install
     ```
 
 ## Set env variables
+
+These env variables must be exported before you run the development server.
 
 - GATSBY_CREATE_SUBSCRIBER_URL='https://your-aws-lambda-endpoint'
 - GATSBY_LIST_ID='emailoctopus-list-id'
@@ -24,5 +30,4 @@
 ```sh
 gatsby develop
 ```
-    
-Before running the development server, make sure you've set the environment variables otherwise submitting an email address will cause an error.
+
